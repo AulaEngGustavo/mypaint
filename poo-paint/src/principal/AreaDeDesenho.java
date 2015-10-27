@@ -7,6 +7,8 @@ import java.util.List;
 
 import javax.swing.JPanel;
 
+import com.sun.prism.paint.Color;
+
 import figuras.Figura;
 
 public class AreaDeDesenho extends JPanel {
@@ -22,6 +24,7 @@ public class AreaDeDesenho extends JPanel {
 	@Override
 	protected void paintComponent(Graphics g) {
 		super.paintComponent(g);
+		g.setColor(Color.BLUE);
 		// desenha algumas figuras
 		for (Figura f : figuras) {
 			f.desenha(g);
